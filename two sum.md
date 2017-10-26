@@ -21,3 +21,25 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+Time complexity: O(n^2) 
+Space complexity: O(1)
+Run time: 26ms
+
+Solution 2: by using dictionary(hash table)
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        dic = {v:k for k, v in enumerate(nums)}
+        for i in range(len(nums)):
+            c = target - nums[i]
+            if c in nums and nums.index(c)!=i:
+                return [i, nums.index(c)]
+                
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+Time complexity: O(n) 
+Space complexity: O(n)
+Run time: 33ms        
