@@ -12,15 +12,16 @@ Solution 1: Brute force
 
 class Solution(object):
     def twoSum(self, nums, target):
-        for i in range(0,len(nums)-1):
-            for j in range(i+1,len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i,j]      
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
+        for i in range(0,len(nums)-1):
+            for j in range(i+1,len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i,j]      
+        
 Time complexity: O(n^2) 
 Space complexity: O(1)
 Run time: 26ms
@@ -35,11 +36,18 @@ class Solution(object):
             if c in nums and nums.index(c)!=i:
                 return [i, nums.index(c)]
                 
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
 Time complexity: O(n) 
 Space complexity: O(n)
 Run time: 33ms        
+
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        map = {}
+        for i in range(len(nums)):
+            if not nums[i] in map.keys():
+                map[target - nums[i]] = i
+            else:
+                return [map[nums[i]], i]
+                
+Run time: 25ms
