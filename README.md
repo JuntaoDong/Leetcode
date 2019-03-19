@@ -1,4 +1,4 @@
-# Leetcode Solutions in Python 3
+# Leetcode Solutions in Python 3 - Keep Updating
 ![leetcode](https://github.com/JuntaoDong/Leetcode/blob/master/leetcode.png)
 ## Array
 | # | Title | Question | Solution |
