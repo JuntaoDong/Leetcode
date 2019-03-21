@@ -1,6 +1,9 @@
 # Leetcode Solutions in Python 3 - Keep Updating
+
 ![leetcode](https://github.com/JuntaoDong/Leetcode/blob/master/leetcode.png)
+
 ## Array
+
 | # | Title | Question | Solution |
 | - | ----- | -------- | -------- |
 | 1 | Two Sum | [Question](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/JuntaoDong/Leetcode/blob/master/python%203/two_sum.py)|
