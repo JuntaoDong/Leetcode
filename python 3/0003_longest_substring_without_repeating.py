@@ -1,19 +1,24 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        slow = 0
-        fast = 0
         max_len = 0
-        mapping = set()
-        while fast < len(s):
-            if s[fast] not in mapping:
-                mapping.add(s[fast])
-                fast += 1
+        mapping = {}
+        count = 0
+        start = 0
+        for i, l in enumerate(s):
+            if l not in mapping:
+                mapping[l] = i
+                count += 1
             else:
-                slow += 1
-                fast = slow
-                max_len = len(mapping) if len(mapping) > max_len else max_len
-                mapping.clear()
-                mapping.add(s[fast])
-                fast += 1
-        max_len = len(mapping) if len(mapping) > max_len else max_len
+                if mapping[l] < start:
+                    mapping[l] = i
+                    count += 1
+                elif mapping[l] == start:
+                    start += 1
+                    mapping[l] = i
+                else:
+                    max_len = count if count > max_len else max_len
+                    start = mapping[l] + 1
+                    count = i - start + 1
+                    mapping[l] = i
+        max_len = count if count > max_len else max_len
         return max_len
