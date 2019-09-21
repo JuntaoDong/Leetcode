@@ -12,7 +12,8 @@
 | 6 | Zigzag Conversion | [Question](https://leetcode.com/problems/zigzag-conversion/) | [Solution]() | String |
 | 7 | Reverse Integer | [Question](https://leetcode.com/problems/reverse-integer/) | [Solution]() | Math |
 | 8 | String to Integer (atoi) | [Question](https://leetcode.com/problems/string-to-integer-atoi/) | [Solution]() | Math, String |
-| 9 | Palindrome Number | [Question](https://leetcode.com/problems/palindrome-number/) | [Solution]() |
+| 9 | Palindrome Number | [Question](https://leetcode.com/problems/palindrome-number/) | [Solution]() | Math |
+| 10 | Regular Expression Matching | [Question](https://leetcode.com/problems/regular-expression-matching/) | [Solution]() | 
 | 26 | Remove Duplicates from Sorted Array | [Question](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Solution](https://github.com/JuntaoDong/Leetcode/blob/master/python%203/0026_remove_duplicates_from_sorted_array.py)| Array, Two Pointers |
 | 27 | Remove Element | [Question](https://leetcode.com/problems/remove-element/) | [Solution](https://github.com/JuntaoDong/Leetcode/blob/master/python%203/0027_remove_element.py)| Array, Two Pointers |
 | 35 | Search Insert Position | [Question](https://leetcode.com/problems/search-insert-position/) | [Solution](https://github.com/JuntaoDong/Leetcode/blob/master/python%203/0035_search_insert_position.py)| Array, Binary Search |
