@@ -1,4 +1,4 @@
-# Leetcode Solutions in Python 3 - Keep Updating
+# Leetcode Solutions in Python 3 - Inactive
 
 ![leetcode](https://github.com/JuntaoDong/Leetcode/blob/master/leetcode.png)
 
